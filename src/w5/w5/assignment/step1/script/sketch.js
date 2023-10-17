@@ -21,13 +21,23 @@ function draw() {
   for (let r = 0; r < rNum; r++) {
     for (let c = 0; c < cNum; c++) {
       noFill();
-      stroke(radom(360), 100, 50, 50);
+      stroke(random(360), 100, 50, 50);
       push();
       translate();
-      rotate(angle);
+      rotate(angleBegin);
       pop();
     }
   }
 
   angleBegin += angleBeginVel;
+
+  for (let a = 0; a < cNum; a++) {
+    for (let b = 0; b < rNum; b++) {
+      noStroke();
+      fill(random(360), 100, 50, 25);
+      let x = ((a + 1) * width) / (cNum + 1);
+      let y = ((b + 1) * height) / (rNum + 1);
+      circle(x, y, 60);
+    }
+  }
 }
