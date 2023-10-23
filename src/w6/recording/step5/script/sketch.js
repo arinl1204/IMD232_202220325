@@ -8,13 +8,13 @@ function preload() {
 }
 
 function setup() {
-  setCanvasContainer('canvas', 2, 1, true);
+  setCanvasContainer('canvas', 3, 2, true);
 
   emitter = new Emitter(width / 2, height - 50);
   floatingForce = createVector(0, -0.005);
   windForce = createVector();
-
   imageMode(CENTER);
+
   background(16);
 }
 

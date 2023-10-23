@@ -10,8 +10,8 @@ class Repeller {
 
   repel(particle) {
     const force = p5.Vector.sub(particle.pos, this.pos);
-    let distance = force.mag();
-    let strength = this.power / (distance * distance);
+    const distance = force.mag();
+    let strength = this.power / distance ** 2;
     force.setMag(strength);
     return force;
   }
@@ -35,7 +35,7 @@ class Repeller {
   }
 
   mouseDragged(mX, mY) {
-    if (this.isDragging) {
+    if (this.isHover) {
       this.pos.set(mX - this.draggingOffset.x, mY - this.draggingOffset.y);
     }
   }

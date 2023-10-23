@@ -26,6 +26,4 @@ function draw() {
       particleArray.splice(a, 1);
     }
   }
-
-  console.log(particleArray.length);
 }

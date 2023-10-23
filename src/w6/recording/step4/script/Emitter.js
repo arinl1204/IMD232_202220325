@@ -18,7 +18,7 @@ class Emitter {
   }
 
   applyRepeller(repeller) {
-    this.particles.forEach((eachParticle, idx) => {
+    this.particles.forEach((eachParticle) => {
       const force = repeller.repel(eachParticle);
       eachParticle.applyForce(force);
     });

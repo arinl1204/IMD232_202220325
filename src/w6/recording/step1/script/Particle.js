@@ -2,7 +2,7 @@ class Particle {
   constructor(x, y) {
     this.pos = createVector(x, y);
     this.vel = createVector(1, 0);
-    this.vel.rotate((TAU / 360) * random(-150, -30));
+    this.vel.rotate((TAU / 360) * random(-150, 30));
     this.acc = createVector(0, 0);
     this.rad = 8;
     this.lifeSpan = 255;
