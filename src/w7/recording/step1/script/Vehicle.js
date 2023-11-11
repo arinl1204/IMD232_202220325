@@ -16,7 +16,7 @@ class Vehicle {
 
   update() {
     this.vel.add(this.acc);
-    this.vel.limit(this.speedMx);
+    this.vel.limit(this.peedMx);
     this.pos.add(this.vel);
     this.acc.mult(0);
   }
@@ -47,5 +47,6 @@ class Vehicle {
     const steer = p5.Vector.sub(desiredVelocity, this.vel);
     steer.limit(this.forceMx);
     this.applyForce(steer);
+    // this.vel.set(desiredVelocity);
   }
 }

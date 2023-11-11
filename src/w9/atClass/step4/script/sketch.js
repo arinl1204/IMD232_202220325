@@ -6,7 +6,7 @@ var Engine = Matter.Engine,
   Constraint = Matter.Constraint,
   MouseConstraint = Matter.MouseConstraint,
   Mouse = Matter.Mouse,
-  Body = Matter.Body,
+  Bodies = Matter.Body,
   Composite = Matter.Composite,
   Bodies = Matter.Bodies;
 

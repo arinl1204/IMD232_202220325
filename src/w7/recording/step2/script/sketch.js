@@ -5,7 +5,7 @@ let mVec;
 function setup() {
   setCanvasContainer('canvas', 3, 2, true);
 
-  colorMode(HSL, 360, 100, 100);
+  colorMode(HSL, 300, 100, 100);
 
   vehicleA = new Vehicle(
     width / 2,
